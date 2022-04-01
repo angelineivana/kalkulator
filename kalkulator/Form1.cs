@@ -12,12 +12,16 @@ namespace kalkulator
 {
     public partial class FormKalkulator : Form
     {
+        public static List<int> input = new List<int>();
+        public static List<string> kode = new List<string>();
+        public static List<string> kodeUrut = kode;
+
+
         public FormKalkulator()
         {
             InitializeComponent();
         }
 
-        public static List<int> input = new List<int>();
         private void btn_0_Click(object sender, EventArgs e)
         {
             if (textBoxOutput.Text != "0")
@@ -146,50 +150,66 @@ namespace kalkulator
                 textBoxOutput.Text += ",";
             }
         }
-
         private void btn_plusminus_Click(object sender, EventArgs e)
         {
-
+            kode.Add("c");
         }
 
         private void btn_persen_Click(object sender, EventArgs e)
         {
             input.Add(Convert.ToInt32(textBoxOutput.Text));
+            kode.Add("g");
         }
 
         private void btn_akar_Click(object sender, EventArgs e)
         {
             input.Add(Convert.ToInt32(textBoxOutput.Text));
+            kode.Add("d");
         }
 
         private void btn_pangkat_Click(object sender, EventArgs e)
         {
             input.Add(Convert.ToInt32(textBoxOutput.Text));
+            kode.Add("f");
         }
 
         private void btn_pecahan_Click(object sender, EventArgs e)
         {
             input.Add(Convert.ToInt32(textBoxOutput.Text));
+            kode.Add("e");
         }
 
         private void btn_bagi_Click(object sender, EventArgs e)
         {
             input.Add(Convert.ToInt32(textBoxOutput.Text));
+            kode.Add("b");
         }
 
         private void btn_kali_Click(object sender, EventArgs e)
         {
             input.Add(Convert.ToInt32(textBoxOutput.Text));
+            kode.Add("a");
         }
 
         private void btn_kurang_Click(object sender, EventArgs e)
         {
             input.Add(Convert.ToInt32(textBoxOutput.Text));
+            kode.Add("i");
         }
-
+        //tambah = h;
+        //kurang = i;
+        //kali = a
+        //bagi = b
+        //akar = d
+        //pecahan = e
+        //pangkat = f
+        //persen = g
+        //plusminus = c
         private void btn_plus_Click(object sender, EventArgs e)
         {
+            
             input.Add(Convert.ToInt32(textBoxOutput.Text));
+            kode.Add("h");
         }
 
         private void btn_delete_Click(object sender, EventArgs e)
@@ -201,6 +221,16 @@ namespace kalkulator
             if (textBoxOutput.Text == "")
             {
                 textBoxOutput.Text = "0";
+            }
+        }
+
+        private void btn_samadengan_Click(object sender, EventArgs e)
+        {
+            kodeUrut.Sort();
+            
+            foreach (string x in kodeUrut)
+            {
+
             }
         }
     }

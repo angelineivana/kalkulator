@@ -263,6 +263,7 @@ namespace kalkulator
             this.btn_samadengan.TabIndex = 23;
             this.btn_samadengan.Text = "=";
             this.btn_samadengan.UseVisualStyleBackColor = true;
+            this.btn_samadengan.Click += new System.EventHandler(this.btn_samadengan_Click);
             // 
             // btn_koma
             // 
