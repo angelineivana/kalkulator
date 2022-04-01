@@ -64,6 +64,7 @@ namespace kalkulator
             this.btn_persen.TabIndex = 0;
             this.btn_persen.Text = "%";
             this.btn_persen.UseVisualStyleBackColor = true;
+            this.btn_persen.Click += new System.EventHandler(this.btn_persen_Click);
             // 
             // btn_akar
             // 
@@ -73,6 +74,7 @@ namespace kalkulator
             this.btn_akar.TabIndex = 1;
             this.btn_akar.Text = "√";
             this.btn_akar.UseVisualStyleBackColor = true;
+            this.btn_akar.Click += new System.EventHandler(this.btn_akar_Click);
             // 
             // btn_pangkat
             // 
@@ -82,6 +84,7 @@ namespace kalkulator
             this.btn_pangkat.TabIndex = 2;
             this.btn_pangkat.Text = "x^2";
             this.btn_pangkat.UseVisualStyleBackColor = true;
+            this.btn_pangkat.Click += new System.EventHandler(this.btn_pangkat_Click);
             // 
             // btn_pecahan
             // 
@@ -91,6 +94,7 @@ namespace kalkulator
             this.btn_pecahan.TabIndex = 3;
             this.btn_pecahan.Text = "1/x";
             this.btn_pecahan.UseVisualStyleBackColor = true;
+            this.btn_pecahan.Click += new System.EventHandler(this.btn_pecahan_Click);
             // 
             // btn_bagi
             // 
@@ -100,6 +104,7 @@ namespace kalkulator
             this.btn_bagi.TabIndex = 7;
             this.btn_bagi.Text = "/";
             this.btn_bagi.UseVisualStyleBackColor = true;
+            this.btn_bagi.Click += new System.EventHandler(this.btn_bagi_Click);
             // 
             // btn_delete
             // 
@@ -109,6 +114,7 @@ namespace kalkulator
             this.btn_delete.TabIndex = 6;
             this.btn_delete.Text = "DEL";
             this.btn_delete.UseVisualStyleBackColor = true;
+            this.btn_delete.Click += new System.EventHandler(this.btn_delete_Click);
             // 
             // btn_c
             // 
@@ -146,6 +152,7 @@ namespace kalkulator
             this.btn_kali.TabIndex = 10;
             this.btn_kali.Text = "*";
             this.btn_kali.UseVisualStyleBackColor = true;
+            this.btn_kali.Click += new System.EventHandler(this.btn_kali_Click);
             // 
             // btn_8
             // 
@@ -175,6 +182,7 @@ namespace kalkulator
             this.btn_kurang.TabIndex = 15;
             this.btn_kurang.Text = "-";
             this.btn_kurang.UseVisualStyleBackColor = true;
+            this.btn_kurang.Click += new System.EventHandler(this.btn_kurang_Click);
             // 
             // btn_6
             // 
@@ -264,6 +272,7 @@ namespace kalkulator
             this.btn_koma.TabIndex = 22;
             this.btn_koma.Text = ",";
             this.btn_koma.UseVisualStyleBackColor = true;
+            this.btn_koma.Click += new System.EventHandler(this.btn_koma_Click);
             // 
             // btn_0
             // 
@@ -283,6 +292,7 @@ namespace kalkulator
             this.btn_plusminus.TabIndex = 20;
             this.btn_plusminus.Text = "+/-";
             this.btn_plusminus.UseVisualStyleBackColor = true;
+            this.btn_plusminus.Click += new System.EventHandler(this.btn_plusminus_Click);
             // 
             // textBoxOutput
             // 
@@ -291,6 +301,7 @@ namespace kalkulator
             this.textBoxOutput.Size = new System.Drawing.Size(278, 31);
             this.textBoxOutput.TabIndex = 24;
             this.textBoxOutput.Text = "0";
+            this.textBoxOutput.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // FormKalkulator
             // 
